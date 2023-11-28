@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.primaryBg{
+  background-color: #FF4800;
+}
+
+.primaryFont{
+  font-family: 'Poppins', sans-serif;
+}
+
+.secondaryFont{
+  font-family: 'Roboto', sans-serif;
+}

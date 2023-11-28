@@ -1,0 +1,19 @@
+#header-part{
+    width: 100%;
+    padding: 20px 0;
+   
+}
+
+#header-part .header-right .btn-login{
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: white;
+    border: 2px solid white;
+    transition: .4s;
+}
+
+#header-part .header-right .btn-login:hover{
+    background-color: #FF4800;
+    color: white;
+    border: 2px solid white;
+}
