@@ -1,0 +1,20 @@
+#navbar-part{
+    width: 100%;
+    padding: 10px 0;
+   
+}
+
+#navbar-part li{
+    font-weight: bold;
+    font-size: 20px;
+    color: #03324D;
+    transition: .4s;
+    margin: 0 3px;
+
+}
+
+#navbar-part li:hover{
+    background-color:#FF4800; 
+    border-radius: 10px;
+    color: white;
+}

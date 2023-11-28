@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <div id='header-part' className='primaryBg'>
             <Container>
-                <div className="header-container flex justify-between">
+                <div className="header-container flex justify-between flex-col md:flex-row">
                     <div className="header-left flex mt-3">
                         <div className='mt-1 mr-2 text-white'>
                            < FaLocationArrow /> 
