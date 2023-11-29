@@ -7,6 +7,7 @@ import Delivary from '../Delivary/Delivary';
 import Company from '../Company/Company';
 import Offer from '../Offer/Offer';
 import OfferCart from '../OfferCart/OfferCart';
+import Contact from '../Contact/Contact';
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             <Company></Company>
             <Offer></Offer>
             <OfferCart></OfferCart>
+            <Contact></Contact>
             
         </div>
     );

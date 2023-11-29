@@ -1,0 +1,51 @@
+#contact-part{
+   padding: 200px 0;
+   background-image: url(../../../assets/images/banner.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+#contact-part .contact-form{
+    border-radius: 10px;
+}
+
+#contact-part .contact-form h1{
+    position: relative;
+}
+
+#contact-part .contact-form h1::before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 46px;
+    background-color: #FF4800;
+    top: 39px;
+    left: 0;
+    border-radius: 5px;
+}
+
+#contact-part .contact-form form .name{
+    width: 100%;
+    padding: 5px 0;
+    border: 2px solid gray;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+#contact-part .contact-form .btn-submit{
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #FF4800;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: .4s;
+
+}
+
+#contact-part .contact-form .btn-submit:hover{
+    background-color: #03324D;
+}
