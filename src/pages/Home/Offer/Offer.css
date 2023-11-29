@@ -1,0 +1,28 @@
+#offer-part{
+    padding-top: 70px;
+    padding-bottom: 150px;
+    background-color: #FF4800;
+}
+
+#offer-part .offer-left{
+    height: 300px;
+}
+
+#offer-part .offer-left h1{
+    position: relative;
+}
+
+#offer-part .offer-left h1::after {
+    position: absolute;
+    top: -30px;
+    right: 6px;
+    width: 10px;
+    height: 90px;
+    background-color: #FF7F4C;
+    content: '';
+    border-radius: 10px;
+}
+
+#offer-part .offer-right{
+    height: 100px;
+}

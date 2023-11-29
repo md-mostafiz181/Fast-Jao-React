@@ -3,7 +3,7 @@
 }
 
 #banner-part .img1{
-    background-image: url(../../../assets/images/banner.jpg);
+    background-image: url(../../../assets/images/banner2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 300px 0;
@@ -11,14 +11,14 @@
 }
 
 #banner-part .img2{
-    background-image: url(../../../assets/images/banner1.jpg);
+    background-image: url(../../../assets/images/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 300px 0;
 }
 
 #banner-part .img3{
-    background-image: url(../../../assets/images/banner2.jpg);
+    background-image: url(../../../assets/images/banner1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 300px 0;

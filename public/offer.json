@@ -1,0 +1,26 @@
+[
+    {
+      "id": "123456",
+      "image": "https://i.ibb.co/6yD15XZ/offer.jpg",
+      "title": "Air Fraight",
+      "short_description": "The air force is a military branch that secures airspace, conducts aerial operations, and ensures national defense through aviation capabilities and strategic air power",
+      "brief_description": "A brief overview of Product 1. Lorem ipsum dolor sit amet,ensures national defense through aviation capabilities and strategic air power consectetur adipiscing elit."
+    },
+    {
+      "id": "654321",
+      "image": "https://i.ibb.co/9ys3JSq/offer2.jpg",
+      "title": "Lunch Fraight",
+      "short_description": "The lunch force is a military branch that secures airspace, conducts aerial operations, and ensures national defense through aviation capabilities and strategic air power",
+      "brief_description": "A brief overview of Product 2. Lorem ipsum dolor sit amet,ensures national defense through aviation capabilities and strategic air power consectetur adipiscing elit."
+    },
+    {
+      "id": "349834",
+      "image": "https://i.ibb.co/x2RnnwK/offer3.jpg",
+      "title": "Curiage troly",
+      "short_description": "The curiage force is a military branch that secures airspace, conducts aerial operations, and ensures national defense through aviation capabilities and strategic air power",
+      "brief_description": "A brief overview of Product 3. Lorem ipsum dolor sit amet,ensures national defense through aviation capabilities and strategic air power consectetur adipiscing elit."
+    }
+    
+  ]
+  
+  
