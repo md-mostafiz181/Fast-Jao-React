@@ -1,8 +1,10 @@
 #contact-part{
-   padding: 200px 0;
+   padding: 100px 0;
    background-image: url(../../../assets/images/banner.jpg);
    background-size: cover;
    background-repeat: no-repeat;
+   position: relative;
+   z-index: -3;
 }
 
 #contact-part .contact-form{
@@ -48,4 +50,76 @@
 
 #contact-part .contact-form .btn-submit:hover{
     background-color: #03324D;
+    cursor: pointer;
+    color: green;
 }
+
+
+
+#contact-part .contact-details .details-box{
+    width: 300px;
+    height: 250px;
+    background-color: #F3F1F2;
+    border-radius: 10px;
+    font-size: 100px;
+    color: rgba(138, 133, 133, 0.603);
+    
+}
+
+#contact-part .contact-details{
+    z-index: -1;
+}
+#contact-part .contact-details .details-box{
+    position: relative;
+}
+
+#contact-part .contact-details .details-box h1{
+    position: absolute;
+}
+
+#contact-part .contact-details .details-box h3 {
+    position: absolute;
+    bottom: 33px;
+    left: 50px;
+}
+
+#contact-part .contact-details .details-box .line{
+    width: 0%;
+    height: 10px;
+    background-color: #FF4800;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: .4s;
+}
+
+#contact-part .contact-details .details-box:hover .line{
+    width: 100%;
+}
+
+#contact-part .contact-details .details-box .icon{
+    transform: scale(1);
+    transition: .4s;
+
+}
+
+#contact-part .contact-details .details-box:hover .icon{
+    transform: scale(1.4);
+}
+
+#contact-part .person {
+    position: absolute;
+    top: -98px;
+    right: 5px;
+    z-index: -2;
+}
+
+/* @keyframes updown{
+    from{
+        top: -108px;
+    }to{
+        top: -80px;
+    }
+} */
