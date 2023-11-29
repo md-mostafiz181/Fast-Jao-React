@@ -1,10 +1,10 @@
 import React from 'react';
+import person from "../../../assets/images/person1.png"
 import "./Contact.css"
 import { FaTruck } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";
 import { FaHouseChimneyWindow } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
-import person from "../../../assets/images/person1.png"
 import Container from '../../../components/Container/Container';
 import CountUp from 'react-countup';
 
@@ -17,7 +17,7 @@ const Contact = () => {
                         <h1 className='lg:text-4xl md:text-2xl sm:text-1xl font-bold primaryFont primaryTextColor ps-6 py-10'>Request a Quote </h1>
 
                         <form action="" className='px-4'>
-                            <input type="text" name="name" id="name" className='name primaryFont primaryTextColor mb-3' placeholder='Name...' />
+                            <input type="text" name="name" id="name" className='name primaryFont primaryTextColor mb-3' placeholder='Name' />
 
                             <input type="number" name="phone" className='name primaryFont primaryTextColor mb-3' id="phone" placeholder='Phone...' />
 
@@ -91,9 +91,6 @@ const Contact = () => {
                 </div>
             </Container>
 
-            <div className="person">
-                <img src={person} alt="" />
-            </div>
             
         </div>
     );
