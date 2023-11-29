@@ -11,26 +11,28 @@ const Delivary = () => {
     <div id="delivary-part">
       <Container>
         <div className="delivary-container flex flex-col lg:flex-row justify-between gap-2">
-          <div className="delivary-left  flex-col lg:flex-row flex justify-between gap-2">
-            <div className="box-1 w-[350px] h-[230px] ms-1 rounded-lg semi-box">
-              <img src={img} alt="" />
-              <div className="overlay">
-                <div className="inner-box">
-                  <div className="icon flex justify-center items-center pt-4">
-                    <FaTruck />
-                  </div>
-                  <h3 className="lg:text-2xl md:text-2xl sm:text-xl font-bold text-center text-white primaryFont mt-3">
-                    On Time Delivery
-                  </h3>
-                  <p className="text-xl text-center font-normal secondaryFont text-white mt-2">
-                    We always provide people a complete solution focused of any
-                    business.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="box-1 w-[350px] h-[230px] ms-1 rounded-lg semi-box">
+          <div className="delivary-left">
+                <div className="semi-box flex-col lg:flex-row flex justify-between gap-2">
+                            <div className="box-1 w-[350px] h-[230px] ms-1 rounded-lg ">
+                        <img src={img} alt="" />
+                        <div className="overlay">
+                            <div className="inner-box">
+                            <div className="icon flex justify-center items-center pt-4">
+                                <FaTruck />
+                            </div>
+                            <h3 className="lg:text-2xl md:text-2xl sm:text-xl font-bold text-center text-white primaryFont mt-3">
+                                On Time Delivery
+                            </h3>
+                            <p className="text-xl text-center font-normal secondaryFont text-white mt-2">
+                                We always provide people a complete solution focused of any
+                                business.
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+
+
+                        <div className="box-1 w-[350px] h-[230px] ms-1 rounded-lg ">
                 <img src={img} alt="" />
                 <div className="overlay">
                   <div className="inner-box">
@@ -47,6 +49,9 @@ const Delivary = () => {
                   </div>
                 </div>
               </div>
+                </div>
+            <div>
+
             </div>
           </div>
           <div className="delivary-right ms-1">
