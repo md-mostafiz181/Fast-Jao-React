@@ -1,6 +1,6 @@
 #delivary-part{
     /* padding: 200px 0; */
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 0;
 
 }
@@ -64,10 +64,9 @@
 }
 
 #delivary-part .delivary-right {
-    width: 350px;
-    height: 400px;
+    width: 526px;
+    height: 500px;
     border-radius: 10px;
-    
 }
 
 #delivary-part .delivary-right img{

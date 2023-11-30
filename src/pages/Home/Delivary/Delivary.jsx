@@ -59,7 +59,7 @@ const Delivary = () => {
             </div>
             <div></div>
           </div>
-          <div className="delivary-right ms-1">
+          <div className="delivary-right hidden sm:block ms-1">
             <img src={delivary} alt="" />
           </div>
         </div>
