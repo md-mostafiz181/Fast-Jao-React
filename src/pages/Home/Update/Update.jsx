@@ -45,7 +45,7 @@ const Update = () => {
                 <div className="bottom-item flex h-[100px]">
 
                     <div className="icon"><FaRegComments /></div>
-                   <div><h6 className="ps-16 text-1xl primaryFont primaryTextColor mt-10">  2 comments</h6></div>
+                   <div><h6 className="ps-16 text-1xl primaryFont primaryTextColor mt-10">  5 comments</h6></div>
                 </div>
 
                
@@ -71,7 +71,7 @@ const Update = () => {
                 <div className="bottom-item flex h-[100px]">
 
                     <div className="icon"><FaRegComments /></div>
-                   <div><h6 className="ps-16 text-1xl primaryFont primaryTextColor mt-10">  2 comments</h6></div>
+                   <div><h6 className="ps-16 text-1xl primaryFont primaryTextColor mt-10">  9 comments</h6></div>
                 </div>
 
                
