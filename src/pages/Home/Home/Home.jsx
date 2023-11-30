@@ -8,6 +8,7 @@ import Company from '../Company/Company';
 import Offer from '../Offer/Offer';
 import OfferCart from '../OfferCart/OfferCart';
 import Contact from '../Contact/Contact';
+import Meet from '../Meet/Meet';
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
             <Offer></Offer>
             <OfferCart></OfferCart>
             <Contact></Contact>
+            <Meet></Meet>
             
         </div>
     );

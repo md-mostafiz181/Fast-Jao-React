@@ -1,0 +1,119 @@
+#meet-part{
+    padding: 100px 0;
+    background-image: url(../../../assets/images/teambg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#meet-part .meet-left{
+    height: 300px;
+}
+
+#meet-part .meet-left h1{
+    position: relative;
+}
+
+#meet-part .meet-left h1::after {
+    position: absolute;
+    top: -43px;
+    right: 6px;
+    width: 10px;
+    height: 90px;
+    background-color: #FF4800;
+    content: '';
+    border-radius: 10px;
+}
+
+#meet-part .meet-right{
+    height: 100px;
+}
+
+#meet-part .team-container .team-item{
+    width: 100%;
+    height: 600px;
+    background-color: F8F8F8;
+    position: relative;
+}
+
+#meet-part .team-container .team-item .team-item-img{
+    width: 100%;
+    height: 450px;
+    background-color: coral;
+    position: relative;
+}
+
+#meet-part .team-container .team-item .team-item-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* #meet-part .team-container .team-item .team-item-img .img{
+    position: relative;
+} */
+
+
+
+#meet-part .team-container .team-item .team-item-img .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #03324db9;
+    transition: .4s;
+}
+
+#meet-part .team-container .team-item:hover .overlay{
+    width: 100%;
+   
+}
+
+#meet-part .team-container .box-container {
+    width: 220px;
+    position: absolute;
+    left: 100px;
+    bottom: 25px;
+}
+
+#meet-part .team-container .box-container .box-item{
+    width: 50px;
+    height: 50px;
+    background-color:white;
+    font-size: 20px;
+    font-weight: bold;
+    color: #03324D;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+#meet-part .team-container .box-container{
+    transform: rotateX(90deg);
+    transition: .4s;
+}
+
+
+#meet-part .team-item:hover .box-container{
+    transform: rotateX(0deg);
+}
+
+#meet-part .team-container .box-container .box-item:hover{
+    background-color: #FF4800;
+    color: white;
+    cursor: pointer;
+}
+
+#meet-part .team-container .team-item .border{
+    width: 50%;
+    height: 8px;
+    background-color: #FF4800;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .4s;
+}
+
+#meet-part .team-container .team-item:hover .border{
+    width: 100%;
+
+}
