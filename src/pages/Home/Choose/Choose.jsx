@@ -1,6 +1,5 @@
 import React from 'react';
 import personImg from "../../../assets/images/good person.png"
-import person1 from "../../../assets/images/person1.png"
 import "./Choose.css"
 import Container from '../../../components/Container/Container';
 

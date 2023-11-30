@@ -1,0 +1,84 @@
+#update-part{
+    padding: 100px 0;
+    background-color: white;
+}
+
+#update-part  p{
+    position: relative;
+}
+
+#update-part p::before {
+    position: absolute;
+    content: "";
+    bottom: 5px;
+    left: 0;
+    width: 77px;
+    height: 4px;
+    background-color: #FF4800;
+}
+
+#update-part .update-container .update-item{
+    width: 100%;
+    height: 600px;
+    
+}
+
+#update-part .update-container .update-item .img-box{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+#update-part .update-container .update-item .img-box img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: .4s;
+}
+
+#update-part .update-container .update-item:hover .img-box img{
+    transform: scale(1.1);
+}
+
+#update-part .update-container .update-item hr{
+    margin-top: 20px;
+}
+
+#update-part .bottom-container .bottom-item{
+    width: 200px;
+}
+
+#update-part .bottom-container .bottom-item .inner-box{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 3px solid #FF4800;
+    overflow: hidden;
+    transform: scale(1);
+    transition: .4s;
+}
+
+#update-part .bottom-container .bottom-item .inner-box:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#update-part .bottom-container .bottom-item .inner-box img{
+    width: 100%;
+}
+
+#update-part .bottom-container .bottom-item{
+    position: relative;
+}
+
+#update-part .bottom-container .bottom-item .icon {
+    position: absolute;
+    top: 40px;
+    color: #FF4800;
+    font-size: 25px;
+    left: 18px;
+}
+
