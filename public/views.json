@@ -1,0 +1,52 @@
+
+[
+    {
+      "image": "https://example.com/image1.jpg",
+      "title": "Product 1",
+      "rating": 4.5,
+      "designation": "Bestseller",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et urna eu ex dignissim fringilla."
+    },
+    {
+      "image": "https://example.com/image2.jpg",
+      "title": "Product 2",
+      "rating": 3.8,
+      "designation": "Featured",
+      "description": "Vivamus nec ligula in mauris ultrices varius. Nullam quis ante euismod, bibendum arcu vel, euismod enim."
+    },
+    {
+      "image": "https://example.com/image3.jpg",
+      "title": "Product 3",
+      "rating": 4.0,
+      "designation": "New Arrival",
+      "description": "Pellentesque nec ex vel odio bibendum volutpat. Integer volutpat augue sit amet quam scelerisque, id congue odio malesuada."
+    },
+    {
+      "image": "https://example.com/image4.jpg",
+      "title": "Product 4",
+      "rating": 4.2,
+      "designation": "Top Pick",
+      "description": "Fusce vel malesuada enim. Aenean scelerisque fermentum risus id convallis. In hac habitasse platea dictumst."
+    },
+    {
+      "image": "https://example.com/image5.jpg",
+      "title": "Product 5",
+      "rating": 4.7,
+      "designation": "Limited Edition",
+      "description": "Quisque tristique eros vitae justo aliquam, ut tempus ex finibus. Integer nec odio vel ligula aliquam semper."
+    },
+    {
+      "image": "https://example.com/image6.jpg",
+      "title": "Product 6",
+      "rating": 3.5,
+      "designation": "Special Offer",
+      "description": "Donec vitae ex nec massa malesuada fermentum. Praesent sit amet tortor vel ligula maximus euismod."
+    },
+    {
+      "image": "https://example.com/image7.jpg",
+      "title": "Product 7",
+      "rating": 4.8,
+      "designation": "Holiday Deal",
+      "description": "Curabitur vel neque vitae nulla ultrices accumsan. Ut euismod nunc ac tincidunt eleifend. Aliquam at sem ac risus bibendum hendrerit."
+    }
+  ]

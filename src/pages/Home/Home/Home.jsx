@@ -10,6 +10,7 @@ import OfferCart from '../OfferCart/OfferCart';
 import Contact from '../Contact/Contact';
 import Meet from '../Meet/Meet';
 import News from '../News/News';
+import Testimonial from '../Testimonial/Testimonial';
 
 const Home = () => {
     return (
@@ -25,6 +26,7 @@ const Home = () => {
             <Contact></Contact>
             <Meet></Meet>
             <News></News>
+            <Testimonial></Testimonial>
             
         </div>
     );
