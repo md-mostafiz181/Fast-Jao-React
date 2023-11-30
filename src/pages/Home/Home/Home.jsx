@@ -11,6 +11,7 @@ import Contact from '../Contact/Contact';
 import Meet from '../Meet/Meet';
 import News from '../News/News';
 import Testimonial from '../Testimonial/Testimonial';
+import Choose from '../Choose/Choose';
 
 const Home = () => {
     return (
@@ -27,6 +28,7 @@ const Home = () => {
             <Meet></Meet>
             <News></News>
             <Testimonial></Testimonial>
+            <Choose></Choose>
             
         </div>
     );

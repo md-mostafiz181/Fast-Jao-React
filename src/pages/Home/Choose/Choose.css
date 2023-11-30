@@ -1,0 +1,43 @@
+#choose-part{
+    padding: 200px 0;
+    background-image: url(../../../assets/images/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+#choose-part .choose-left{
+    position: relative;
+}
+
+#choose-part .choose-left .person{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: move 1s alternate infinite;
+}
+
+@keyframes move{
+    from{
+        left: 30px;
+    }to{
+        left: 0px;
+    }
+}
+
+
+#choose-part .choose-right p{
+    position: relative;
+}
+
+#choose-part .choose-right p::before {
+    position: absolute;
+    content: "";
+    bottom: 5px;
+    left: 0;
+    width: 77px;
+    height: 4px;
+    background-color: #FF4800;
+}
