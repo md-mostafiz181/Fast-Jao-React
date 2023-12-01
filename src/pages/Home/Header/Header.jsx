@@ -2,6 +2,7 @@ import React from 'react';
 import { FaLocationArrow } from "react-icons/fa";
 import "./Header.css"
 import Container from '../../../components/Container/Container';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -16,7 +17,7 @@ const Header = () => {
                         <h3 className='secondaryFont font-normal text-white flex'> info@fastjao.com</h3>
                     </div>
                     <div className="header-right">
-                        <button className='btn-login primaryFont font-normal rounded-lg text-[#FF4800]'>Login</button>
+                       <Link to="/login"> <button className='btn-login primaryFont font-normal rounded-lg text-[#FF4800]'>Login</button></Link>
                     </div>
                 </div>
             </Container>

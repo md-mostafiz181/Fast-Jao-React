@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="footer-container grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-3">
           <div className="footer-item  h-[400px] ps-2">
             <h1 className="text-4xl font-bold primaryFont secondaryTextColor">
-              Fast Jao
+              Red<span className="text-white">X</span>
             </h1>
 
             <p className="text-2xl font-bold text-[#a7a8b4] mt-10">
@@ -23,9 +23,9 @@ const Footer = () => {
               97691 21552
             </p>
             <p className="text-2xl font-bold text-[#a7a8b4] my-4">
-              info@fastjao.com
+              info@redx.com
             </p>
-            <p className="text-2xl font-bold text-[#a7a8b4]">www.fastjao.com</p>
+            <p className="text-2xl font-bold text-[#a7a8b4]">www.redx.com</p>
 
             <div className="bottom-icon flex justify-between">
               <div className="bottom-item flex justify-center items-center">

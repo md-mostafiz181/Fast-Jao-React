@@ -7,7 +7,7 @@ import news1 from "../../../assets/images/latest1.jpg"
 import news2 from "../../../assets/images/latest2.jpg"
 import news3 from "../../../assets/images/latest3.jpg"
 import news4 from "../../../assets/images/latest.jpg"
-import news5 from "../../../assets/images/news5.jpg"
+
 
 import "./News.css";
 import Container from "../../../components/Container/Container";

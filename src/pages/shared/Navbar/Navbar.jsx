@@ -1,14 +1,15 @@
 import React from 'react';
 import "./Navbar.css"
 import Container from '../../../components/Container/Container';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
     const navOptions = <>
-        <li ><a>Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Pages</a></li>
-        <li><a>Services</a></li>
+        <Link to="/"><li ><a>Home</a></li></Link>
+        <Link to="/about"><li><a>About</a></li></Link>
+        <Link to="/pages"><li><a>Pages</a></li></Link>
+        <Link to="/service"><li><a>Services</a></li></Link>
         <li><a>Projects</a></li>
         <li><a>News</a></li>
 
@@ -27,7 +28,7 @@ const Navbar = () => {
                                 {navOptions}
                         </ul>
                         </div>
-                        <a className="lg:text-4xl md:text-3xl sm:text-2xl primaryTextColor uppercase primaryFont font-bold">Fast jao</a>
+                        <a className="lg:text-4xl md:text-3xl sm:text-2xl primaryTextColor  primaryFont font-bold">Red<span className='text-[#FF4800]'>X</span> </a>
                     </div>
                     <div className="navbar-end hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
