@@ -5,8 +5,15 @@ import Container from '../Container/Container';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../providers/AuthProvider';
 import Swal from 'sweetalert2';
+import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
+import app from '../../firebase/firebase.config';
 
 const Login = () => {
+    const auth=getAuth(app)
+    const provider =new GoogleAuthProvider();
+    
+
+
 
    
 
@@ -46,6 +53,19 @@ const Login = () => {
         
     }
 
+    const handleGoogleSignIn = ()=>{
+        signInWithPopup(auth,provider)
+        .then(result =>{
+            const user =result.user;
+            console.log(user)
+            navigate("/")
+        })
+        .catch(error=>{
+            console.log("error", error.message)
+        })
+
+    }
+
 
     return (
         <div id='login-part'>
@@ -67,7 +87,7 @@ const Login = () => {
 
                         <hr />
 
-                        <button className='btn-google'>
+                        <button onClick={handleGoogleSignIn} className='btn-google'>
                             <div className='flex justify-center items-center'>
                                <FcGoogle className='icon' />
                             </div>

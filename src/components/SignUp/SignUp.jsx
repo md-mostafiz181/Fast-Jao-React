@@ -5,6 +5,8 @@ import { FcGoogle } from 'react-icons/fc';
 import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../providers/AuthProvider';
+import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
+import app from '../../firebase/firebase.config';
 
 const SignUp = () => {
 
@@ -66,6 +68,25 @@ const SignUp = () => {
             setError(error.message)
         })
     }
+
+    const auth=getAuth(app)
+    const provider =new GoogleAuthProvider();
+
+
+
+    const handleGoogleSignUp = ()=>{
+
+        signInWithPopup(auth,provider)
+        .then(result =>{
+            const user =result.user;
+            console.log(user)
+            navigate("/")
+        })
+        .catch(error=>{
+            console.log("error", error.message)
+        })
+
+    }
     return (
         <div id='signUp-part'>
             <Container>
@@ -93,7 +114,7 @@ const SignUp = () => {
 
                         <hr />
 
-                        <button className='btn-google'>
+                        <button onClick={handleGoogleSignUp} className='btn-google'>
                             <div className='flex justify-center items-center'>
                                <FcGoogle className='icon' />
                             </div>
