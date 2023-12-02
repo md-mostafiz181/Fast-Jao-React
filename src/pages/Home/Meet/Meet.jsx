@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Meet.css";
 import team1 from "../../../assets/images/team01.jpg"
 import team2 from "../../../assets/images/team02.jpg"
@@ -8,8 +8,13 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaGooglePlus } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Meet = () => {
+  useEffect(()=>{
+    AOS.init(); 
+},[])
   return (
     <div id="meet-part">
       <Container>
@@ -34,7 +39,7 @@ const Meet = () => {
 
 
         <div className="team-container grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-3">
-            <div className="team-item shadow-lg">
+            <div data-aos="zoom-in" className="team-item shadow-lg">
                 <div className="team-item-img">
                     <img className="img" src={team1} alt="" />
                     <div className="overlay">
@@ -62,7 +67,7 @@ const Meet = () => {
 
                 <div className="border"></div>
             </div>
-            <div className="team-item shadow-lg">
+            <div data-aos="flip-left" className="team-item shadow-lg">
                 <div className="team-item-img">
                     <img className="img" src={team2} alt="" />
                     <div className="overlay">
@@ -90,7 +95,7 @@ const Meet = () => {
 
                 <div className="border"></div>
             </div>
-            <div className="team-item shadow-lg">
+            <div data-aos="zoom-in-up" className="team-item shadow-lg">
                 <div className="team-item-img">
                     <img className="img" src={team3} alt="" />
                     <div className="overlay">

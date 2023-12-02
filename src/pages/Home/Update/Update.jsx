@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img1 from "../../../assets/images/latest1.jpg"
 import img2 from "../../../assets/images/latestbiman.jpg"
 import img3 from "../../../assets/images/latestgari.jpg"
@@ -8,8 +8,13 @@ import innerImg3 from "../../../assets/images/testimonial3.jpg"
 import { FaRegComments } from "react-icons/fa";
 import "./Update.css";
 import Container from "../../../components/Container/Container";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Update = () => {
+    useEffect(()=>{
+        AOS.init(); 
+    },[])
   return (
     <div id="update-part">
       <Container>
@@ -26,7 +31,7 @@ const Update = () => {
 
 
         <div className="update-container grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-3 mt-10">
-            <div className="update-item shadow-lg">
+            <div data-aos="zoom-in" className="update-item shadow-lg">
                 <div className="img-box">
                     <img src={img1} alt="" />
                 </div>
@@ -52,7 +57,7 @@ const Update = () => {
                </div>  
             </div>
 
-            <div className="update-item shadow-lg">
+            <div data-aos="zoom-in" className="update-item shadow-lg">
                 <div className="img-box">
                     <img src={img2} alt="" />
                 </div>
@@ -78,7 +83,7 @@ const Update = () => {
                </div>  
             </div>
 
-            <div className="update-item shadow-lg">
+            <div data-aos="zoom-in" className="update-item shadow-lg">
                 <div className="img-box">
                     <img src={img3} alt="" />
                 </div>

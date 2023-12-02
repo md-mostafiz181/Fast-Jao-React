@@ -1,19 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./Company.css"
 import trust1 from "../../../assets/images/trust1.jpg"
 import trust2 from "../../../assets/images/trust2.jpg"
 import signature from "../../../assets/images/signature.png"
 import Container from '../../../components/Container/Container';
 import CountUp from 'react-countup';
-// import CountUp from 'react-countup/build/CountUp';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Company = () => {
+    useEffect(()=>{
+        AOS.init(); 
+    },[])
     return (
         <div id='company-part'>
 
             <Container>
             <div className="company-container grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-5 mx-auto">
-                    <div className="left w-full">
+                    <div data-aos="fade-right" className="left w-full">
                         <img src={trust1} alt="" />
 
                         <div className="counter-box shadow-lg px-5 py-5">
@@ -32,7 +37,7 @@ const Company = () => {
                         </div>
 
                     </div>
-                    <div className="right w-full">
+                    <div data-aos="fade-left" className="right w-full">
                         <p className='top primaryFont secondaryTextColor font-noraml lg:text-1xl md:text-1xl sm:text-xl ps-20 mb-2'>About Our Company</p>
                         <h1 className='lg:text-5xl md:text-3xl sm:text-2xl primaryFont font-bold primaryTextColor'>Trust Logistic <br /> Survice Provider</h1>
                         <li>revolutionary catalysts for chang</li>

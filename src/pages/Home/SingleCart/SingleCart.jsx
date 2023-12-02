@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaPlaneDeparture } from "react-icons/fa6";
 import { FaGlobe } from "react-icons/fa6";
 import { FaAngleDoubleLeft } from "react-icons/fa";
 import Modal from "react-modal";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 import "./SingleCart.css";
 import Container from "../../../components/Container/Container";
 
 const SingleCart = (props) => {
+
+    useEffect(()=>{
+      AOS.init(); 
+  },[])
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => {
     setIsModalOpen(true);
@@ -21,7 +28,7 @@ const SingleCart = (props) => {
 
   return (
     <div id="single-cart">
-      <div className="single-cart shadow-lg">
+      <div  data-aos="zoom-in" className="single-cart shadow-lg">
         <div className="img">
           <img src={image} alt="" />
           <div className="overlay"></div>

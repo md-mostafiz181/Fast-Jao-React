@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { FcGoogle } from "react-icons/fc";
 import "./Login.css"
 import Container from '../Container/Container';
@@ -8,14 +8,14 @@ import Swal from 'sweetalert2';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 import app from '../../firebase/firebase.config';
 
+
 const Login = () => {
+
+
+
     const auth=getAuth(app)
     const provider =new GoogleAuthProvider();
     
-
-
-
-   
 
     const {signIn}=useContext(AuthContext)
     const navigate=useNavigate()
@@ -71,7 +71,7 @@ const Login = () => {
         <div id='login-part'>
             <Container>
                 <div >
-                    <div className="login-box">
+                    <div  className="login-box">
                         <h1 className='lg:text-4xl md:text-2xl sm:text-2xl font-bold primaryFont primaryTextColor text-center pt-4'>Login</h1>
                         <form onSubmit={handleLogin}>
                             <input className='focus:outline-none' type="text" name="name" id="name" placeholder='Name...' />

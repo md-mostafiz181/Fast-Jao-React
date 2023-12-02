@@ -2,9 +2,14 @@ import React, { useEffect, useState } from 'react';
 import "./OfferCart.css"
 import Container from '../../../components/Container/Container';
 import SingleCart from '../SingleCart/SingleCart';
-// import { data } from 'autoprefixer';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const OfferCart = () => {
+
+    useEffect(()=>{
+        AOS.init(); 
+    },[])
 
     const [carts,setCarts]=useState([])
     useEffect(()=>{

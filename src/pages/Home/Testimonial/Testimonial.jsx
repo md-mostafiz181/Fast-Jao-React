@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import testimonial1 from "../../../assets/images/testimonial1.jpg";
 import testimonial2 from "../../../assets/images/testimonial2.jpg";
 import testimonial3 from "../../../assets/images/testimonial3.jpg";
 import { FaStar } from "react-icons/fa";
 import { FaTruckDroplet } from "react-icons/fa6";
 import "./Testimonial.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 import Container from "../../../components/Container/Container";
 
 const Testimonial = () => {
+  
+  useEffect(()=>{
+    AOS.init(); 
+},[])
   return (
     <div id="testimonial-part">
       <Container>
@@ -21,7 +27,7 @@ const Testimonial = () => {
         </h1>
 
         <div className="testimonial-container grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-3 mt-5">
-          <div className="item">
+          <div data-aos="flip-left" className="item">
 
            
             <div className="test1 shadow-lg">
@@ -45,7 +51,7 @@ const Testimonial = () => {
           </div>
 
 
-          <div className="item">
+          <div data-aos="flip-up"  className="item">
             <div className="test1 shadow-lg">
             <div className="box flex justify-center items-center text-3xl text-white">
               <FaTruckDroplet />
@@ -64,7 +70,7 @@ const Testimonial = () => {
           </div>
 
 
-          <div className="item">
+          <div data-aos="flip-right" className="item">
             <div className="test1 shadow-lg">
             <div className="box flex justify-center items-center text-3xl text-white">
               <FaTruckDroplet />

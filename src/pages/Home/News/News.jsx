@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -8,11 +8,19 @@ import news2 from "../../../assets/images/latest2.jpg"
 import news3 from "../../../assets/images/latest3.jpg"
 import news4 from "../../../assets/images/latest.jpg"
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
 
 import "./News.css";
 import Container from "../../../components/Container/Container";
 
 const News = () => {
+
+  
+  useEffect(()=>{
+    AOS.init(); 
+},[])
   return (
     <div id="news-part">
       <Container>
@@ -25,7 +33,7 @@ const News = () => {
 
         {/* swiper js start from here */}
 
-        <div className="news-container  mt-5">
+        <div data-aos="zoom-in" className="news-container  mt-5">
           <Swiper
             slidesPerView={3}
             spaceBetween={10}

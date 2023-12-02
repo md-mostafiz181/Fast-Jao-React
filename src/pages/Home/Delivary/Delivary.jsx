@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img from "../../../assets/images/banner.jpg";
 import delivary from "../../../assets/images/delivary.jpg";
 import { FaTruck } from "react-icons/fa";
 import { FaGlobeAfrica } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import "./Delivary.css";
 import Container from "../../../components/Container/Container";
 
 const Delivary = () => {
+  useEffect(()=>{
+    AOS.init(); 
+},[])
   return (
     <div id="delivary-part">
       <Container>
@@ -21,7 +26,7 @@ const Delivary = () => {
         <div className="delivary-container flex flex-col lg:flex-row justify-between gap-2">
           <div className="delivary-left">
             <div className="semi-box flex-col lg:flex-row flex justify-between gap-2">
-              <div className="box-1 w-[350px] h-[230px] ms-1 rounded-lg ">
+              <div data-aos="fade-right" className="box-1 w-[350px] h-[230px] ms-1 rounded-lg ">
                 <img src={img} alt="" />
                 <div className="overlay">
                   <div className="inner-box">
@@ -39,7 +44,7 @@ const Delivary = () => {
                 </div>
               </div>
 
-              <div className="box-1 w-[350px] h-[230px] ms-1 rounded-lg ">
+              <div data-aos="fade-left" className="box-1 w-[350px] h-[230px] ms-1 rounded-lg ">
                 <img src={img} alt="" />
                 <div className="overlay">
                   <div className="inner-box">
@@ -59,7 +64,7 @@ const Delivary = () => {
             </div>
             <div></div>
           </div>
-          <div className="delivary-right hidden sm:block ms-1">
+          <div data-aos="fade-down-right" className="delivary-right hidden sm:block ms-1">
             <img src={delivary} alt="" />
           </div>
         </div>

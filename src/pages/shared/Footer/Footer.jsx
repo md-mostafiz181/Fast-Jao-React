@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -7,12 +7,17 @@ import { FaArrowCircleRight } from "react-icons/fa";
 import ship from "../../../assets/images/ship.png";
 import "./Footer.css";
 import Container from "../../../components/Container/Container";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Footer = () => {
+  useEffect(()=>{
+    AOS.init(); 
+},[])
   return (
     <div id="footer-part">
       <Container>
-        <div className="footer-container grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-3">
+        <div data-aos="zoom-in-up" className="footer-container grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-3">
           <div className="footer-item  h-[400px] ps-2">
             <h1 className="text-4xl font-bold primaryFont secondaryTextColor">
               Red<span className="text-white">X</span>
