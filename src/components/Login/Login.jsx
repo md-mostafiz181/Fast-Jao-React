@@ -1,24 +1,68 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { FcGoogle } from "react-icons/fc";
 import "./Login.css"
 import Container from '../Container/Container';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../providers/AuthProvider';
+import Swal from 'sweetalert2';
 
 const Login = () => {
+
+   
+
+    const {signIn}=useContext(AuthContext)
+    const navigate=useNavigate()
+
+    const handleLogin=event=>{
+        event.preventDefault();
+
+        const form=event.target;
+        const name=form.name.value;
+        const email=form.email.value;
+        const password=form.password.value;
+        console.log(name,email,password)
+
+        signIn(email,password)
+        .then(result =>{
+            const loggedUser=result.user;
+            console.log(loggedUser)
+            form.reset();
+            navigate("/")
+
+            Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "User login successfully",
+                showConfirmButton: false,
+                timer: 1500
+              });
+
+
+           
+        })
+        .catch(error=>{
+            console.log(error)
+        })
+        
+    }
+
+
     return (
         <div id='login-part'>
             <Container>
                 <div >
                     <div className="login-box">
-                        <h1 className='lg:text-4xl md:text-2xl sm:text-2xl font-bold primaryFont primaryTextColor text-center pt-4'>Please Login</h1>
-                        <form action="">
+                        <h1 className='lg:text-4xl md:text-2xl sm:text-2xl font-bold primaryFont primaryTextColor text-center pt-4'>Login</h1>
+                        <form onSubmit={handleLogin}>
                             <input className='focus:outline-none' type="text" name="name" id="name" placeholder='Name...' />
 
                             <input  className='focus:outline-none' type="email" name="email" id="email" placeholder='Email...' />
 
                             <input  className='focus:outline-none' type="password" name="password" id="password" placeholder='Password' />
 
-                            <button className='btn-login'>Login</button>
+                           <input className='btn-login focus:outline-none' type="submit" value="Login" />
+
+                           
                         </form>
 
                         <hr />
@@ -29,7 +73,7 @@ const Login = () => {
                             </div>
                         </button>
 
-                        <h4 className='ps-3 mt-2 font-bold primaryFont primaryTextcolor'>Are you new in RedX?<Link className='secondaryTextColor'> SignIn</Link> </h4>
+                        <h4 className='ps-3 mt-2 font-bold primaryFont primaryTextcolor'>Are you new in RedX?<Link to="/signUp" className='secondaryTextColor'> SignUp</Link> </h4>
 
                         
                     </div>

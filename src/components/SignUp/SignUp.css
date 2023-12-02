@@ -1,4 +1,4 @@
-#login-part{
+#signUp-part{
     padding: 150px 0;
     background: url(../../assets/images/login.jpg);
     background-size: cover;
@@ -7,7 +7,7 @@
 }
 
 
-#login-part .login-box{
+#signUp-part .signUp-box{
     width: 400px;
     padding: 20px 0;
     background:linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
@@ -22,7 +22,7 @@
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
 }
 
-#login-part .login-box input{
+#signUp-part .signUp-box input{
     width: 95%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -35,12 +35,12 @@
     
 }
 
-#login-part .login-box hr{
+#signUp-part .signUp-box hr{
     margin-top: 40px;
     color: #FF4800;
 }
 
-#login-part .login-box .btn-login{
+#signUp-part .signUp-box .btn-signUp{
     display: inline-block;
     width: 95%;
     background-color: #FF4800;
@@ -52,14 +52,15 @@
     color: white;
     font-size: 25px;
     transition: .4s;
-    border: none;
+    border: none !important;
+    cursor: pointer;
 }
 
-#login-part .login-box .btn-login:hover{
+#signUp-part .signUp-box .btn-signUp:hover{
     background-color: #03324D;
 }
 
-#login-part .login-box .btn-google{
+#signUp-part .signUp-box .btn-google{
     display: inline-block;
     width: 95%;
     background-color: white;
@@ -73,7 +74,6 @@
     
 }
 
-
-
-
-
+.text-error{
+    color: red;
+}
